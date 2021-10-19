@@ -8,6 +8,8 @@
   <ItemGroup>
     <ProjectReference Include="..\Applications\Spaanjaars.FileProviders.Azure\Spaanjaars.FileProviders.Azure.csproj" />
     <ProjectReference Include="..\Applications\Spaanjaars.FileProviders.FileSystem\Spaanjaars.FileProviders.FileSystem.csproj" />
+    <ProjectReference Include="..\Spaanjaars.FileProviders.Azure\Spaanjaars.FileProviders.Azure.csproj" />
+    <ProjectReference Include="..\Spaanjaars.FileProviders.FileSystem\Spaanjaars.FileProviders.FileSystem.csproj" />
   </ItemGroup>
 
 </Project>

@@ -17,7 +17,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{6D324499
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Demos", "Demos", "{DB73909C-206E-407A-9E49-5D3C0DC6ED14}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Spaanjaars.FileProviders.Migrator", "Spaanjaars.FileProviders.Migrator\Spaanjaars.FileProviders.Migrator.csproj", "{B9B926B5-7324-4E05-A62C-8973533FE957}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Spaanjaars.FileProviders.Migrator", "Applications\Spaanjaars.FileProviders.Migrator\Spaanjaars.FileProviders.Migrator.csproj", "{23EAED87-9437-40E5-85ED-8BA4782CEEFF}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -45,10 +45,10 @@ Global
 		{1F434586-5C91-4673-9785-D865B1D8CE20}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{1F434586-5C91-4673-9785-D865B1D8CE20}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{1F434586-5C91-4673-9785-D865B1D8CE20}.Release|Any CPU.Build.0 = Release|Any CPU
-		{B9B926B5-7324-4E05-A62C-8973533FE957}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{B9B926B5-7324-4E05-A62C-8973533FE957}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{B9B926B5-7324-4E05-A62C-8973533FE957}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{B9B926B5-7324-4E05-A62C-8973533FE957}.Release|Any CPU.Build.0 = Release|Any CPU
+		{23EAED87-9437-40E5-85ED-8BA4782CEEFF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{23EAED87-9437-40E5-85ED-8BA4782CEEFF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{23EAED87-9437-40E5-85ED-8BA4782CEEFF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{23EAED87-9437-40E5-85ED-8BA4782CEEFF}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -56,7 +56,7 @@ Global
 	GlobalSection(NestedProjects) = preSolution
 		{2ED6DC44-D910-4813-ACD9-AE218F49A9DA} = {DB73909C-206E-407A-9E49-5D3C0DC6ED14}
 		{1F434586-5C91-4673-9785-D865B1D8CE20} = {6D324499-34BE-4FF0-9358-741435580AD7}
-		{B9B926B5-7324-4E05-A62C-8973533FE957} = {DB73909C-206E-407A-9E49-5D3C0DC6ED14}
+		{23EAED87-9437-40E5-85ED-8BA4782CEEFF} = {DB73909C-206E-407A-9E49-5D3C0DC6ED14}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {2DECB138-089C-4A43-B2D1-47645D77F41F}
