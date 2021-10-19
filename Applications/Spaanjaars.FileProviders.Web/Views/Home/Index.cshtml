@@ -1,0 +1,30 @@
+﻿@model List<FileDto>;
+@{
+  ViewData["Title"] = "Home Page";
+}
+<div class="text-center">
+  <h1 class="display-4">Welcome</h1>
+  <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+</div>
+<form method="post">
+  <ul>
+    @foreach (var file in Model)
+    {
+      <li>@file.Name</li>
+      <button asp-action="Download" asp-route-path="@file.Name" class="btn btn-primary">Download</button>
+      <button asp-action="Delete" asp-route-path="@file.Name" class="btn btn-danger">Delete</button>
+    }
+  </ul>
+</form>
+<h2>Upload new</h2>
+<form enctype="multipart/form-data" method="post" asp-action="Upload">
+  <dl>
+    <dt>
+      <label>Select file</label>
+    </dt>
+    <dd>
+      <input type="file" name="file">
+    </dd>
+  </dl>
+  <input class="btn btn-primary" type="submit" value="Upload" />
+</form>

@@ -1,0 +1,12 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net5.0</TargetFramework>
+    <GenerateDocumentationFile>true</GenerateDocumentationFile>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Spaanjaars.FileProviders.Infrastructure\Spaanjaars.FileProviders.Infrastructure.csproj" />
+  </ItemGroup>
+
+</Project>

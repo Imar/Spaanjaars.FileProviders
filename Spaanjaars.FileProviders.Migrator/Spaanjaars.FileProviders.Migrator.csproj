@@ -1,0 +1,13 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net5.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Applications\Spaanjaars.FileProviders.Azure\Spaanjaars.FileProviders.Azure.csproj" />
+    <ProjectReference Include="..\Applications\Spaanjaars.FileProviders.FileSystem\Spaanjaars.FileProviders.FileSystem.csproj" />
+  </ItemGroup>
+
+</Project>

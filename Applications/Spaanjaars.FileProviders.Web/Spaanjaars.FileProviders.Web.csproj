@@ -1,0 +1,13 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net5.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Spaanjaars.FileProviders.Azure\Spaanjaars.FileProviders.Azure.csproj" />
+    <ProjectReference Include="..\Spaanjaars.FileProviders.FileSystem\Spaanjaars.FileProviders.FileSystem.csproj" />
+    <ProjectReference Include="..\Spaanjaars.FileProviders.Infrastructure\Spaanjaars.FileProviders.Infrastructure.csproj" />
+  </ItemGroup>
+
+</Project>
