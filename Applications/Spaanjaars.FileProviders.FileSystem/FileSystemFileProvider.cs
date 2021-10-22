@@ -21,9 +21,9 @@ namespace Spaanjaars.FileProviders.FileSystem
     public FileSystemFileProvider(string rootFolder)
     {
       ThrowIfFolderNotExists(rootFolder);
-      if (!rootFolder.EndsWith("\\"))
+      if (!rootFolder.EndsWith(Path.DirectorySeparatorChar) && !rootFolder.EndsWith(Path.AltDirectorySeparatorChar))
       {
-        rootFolder += "\\";
+        rootFolder += Path.DirectorySeparatorChar;
       }
       _rootFolder = rootFolder;
     }
@@ -40,7 +40,7 @@ namespace Spaanjaars.FileProviders.FileSystem
       var result = new List<FileInfo>();
       foreach (var file in files)
       {
-        string relativePath = file.FullName.Replace(folder, "", StringComparison.CurrentCultureIgnoreCase);
+        var relativePath = file.FullName.Replace(folder, "", StringComparison.CurrentCultureIgnoreCase);
         result.Add(new FileInfo(file.Name, relativePath, file.FullName));
       }
       return Task.FromResult(result);
@@ -137,9 +137,9 @@ namespace Spaanjaars.FileProviders.FileSystem
 
     private string GetFolderPath(string rootContainer)
     {
-      if (!rootContainer.EndsWith("\\"))
+      if (!rootContainer.EndsWith(Path.DirectorySeparatorChar) && !rootContainer.EndsWith(Path.AltDirectorySeparatorChar))
       {
-        rootContainer += "\\";
+        rootContainer += Path.DirectorySeparatorChar;
       }
       return Path.Combine(_rootFolder, rootContainer);
     }
